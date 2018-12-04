@@ -16,13 +16,24 @@ class MyApp extends StatelessWidget {
           title: Text('Listing'),
           
         ),
-        body: Card(
-          child: Column(
-            children: <Widget>[
-              Image.asset('assets/food.jpg'),
-              Text('Hello World!')
-            ],
-          ),
+        body: Column(
+          children: <Widget>[
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: RaisedButton(
+                onPressed: () {},
+                child: Text('Add Product'),
+              ),
+            ),
+            Card(
+              child: Column(
+                children: <Widget>[
+                  Image.asset('assets/food.jpg'),
+                  Text('Hello World!')
+                ],
+              ),
+            )
+          ]
 
         )
       )
