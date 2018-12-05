@@ -24,7 +24,8 @@ class Products extends StatelessWidget {
         itemCount: products.length,
       );
     }else {
-      productCards = Center(child: Text('No products, add some.'))
+      //return empty container if you don't want to render anything, returning null will be invalid
+      productCards = Center(child: Text('No products, add some.'));
     }
     return productCards;
   }
