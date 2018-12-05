@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class Products extends StatelessWidget {
-  final List<String> _products;
+  final List<String> products;
 
-  Products(this._products);
+  Products(this.products);
 
   Widget build(BuildContext context) {
     return Column(
-      children: _products.map((product) => 
+      children: products.map((product) => 
         Card(
           child: Column(
             children: <Widget>[
