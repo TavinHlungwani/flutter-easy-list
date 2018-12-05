@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ebay_copy/products.dart';
 
 void main() {
   runApp(MyApp());
@@ -38,18 +39,7 @@ class _MyAppState extends State<MyApp> {
                 child: Text('Add Product'),
               ),
             ),
-            Column(
-              children: _products.map((product) => 
-                Card(
-                  child: Column(
-                    children: <Widget>[
-                      Image.asset('assets/food.jpg'),
-                      Text(product)
-                    ],
-                  ),
-                )
-              ).toList()
-            )
+            Products(_products)
           ]
         )
       )
