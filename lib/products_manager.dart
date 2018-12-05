@@ -5,7 +5,7 @@ import 'package:ebay_copy/products.dart';
 class ProductsManager extends StatefulWidget {
   final String startingProduct;
   
-  ProductsManager(this.startingProduct);
+  ProductsManager({this.startingProduct='Sweets Tester'});
 
 
   @override
@@ -39,7 +39,7 @@ class _ProductsManagerState extends State<ProductsManager> {
             child: Text('Add Product'),
           ), 
         ),
-        Products(_products)
+        Products(products:_products)
       ],
     );
   }

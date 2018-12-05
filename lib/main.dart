@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           title: Text('Listing'),
           
         ),
-        body: ProductsManager(startingProduct)
+        body: ProductsManager()
       )
     );
   }
