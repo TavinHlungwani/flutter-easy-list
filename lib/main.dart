@@ -6,6 +6,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  final String startingProduct = "Food Tester";
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
           title: Text('Listing'),
           
         ),
-        body: ProductsManager()
+        body: ProductsManager(startingProduct)
       )
     );
   }
