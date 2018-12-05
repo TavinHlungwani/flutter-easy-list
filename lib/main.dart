@@ -13,6 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Awesome Flutter',
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+        accentColor: Colors.deepPurple
+      ),
       home: Scaffold(
         appBar: AppBar(
           title: Text('Listing'),
