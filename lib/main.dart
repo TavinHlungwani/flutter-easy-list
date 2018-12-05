@@ -11,7 +11,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  final String startingProduct = "Food Tester";
 
   @override
   Widget build(BuildContext context) {
