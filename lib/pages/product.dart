@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 class ProductPage extends StatelessWidget {
-  final Map<String,String> product;
+  final Map<String,dynamic> product;
 
   ProductPage({this.product});
 
