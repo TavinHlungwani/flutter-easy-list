@@ -30,7 +30,9 @@ class ProductsPage extends StatelessWidget {
         ),
         appBar: AppBar(
           title: Text('Listing'),
-          
+          actions: <Widget>[
+            IconButton(icon: Icon(Icons.favorite), onPressed: () {},)
+          ],
         ),
         body: ProductsManager(products)
       );

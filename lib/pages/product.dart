@@ -45,9 +45,9 @@ class ProductPage extends StatelessWidget {
                 Container(padding: EdgeInsets.all(8.0), child: Text(product['title'])),
                 Container(
                   padding: EdgeInsets.all(8.0),
-                  child: RaisedButton(
+                  child: IconButton(
                     color: Theme.of(context).accentColor,
-                    child: Text('Delete'),
+                    icon: Icon(Icons.delete),
                     onPressed: () => _showWarningDialog(context),
                   ),
                 )
