@@ -12,23 +12,28 @@ class Products extends StatelessWidget {
           Image.asset(products[index]['imageUrl']),
           Container(
             margin: EdgeInsets.only(top: 8.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                  products[index]['title'],
-                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold, fontFamily: 'Oswald'),
-                ),
-                SizedBox(width: 8.0,),
-                Container(
-                  child: Text('\$${products[index]['price'].toString()}', style: TextStyle(color: Colors.white),),
-                  padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(4.0)),
-                    color: Theme.of(context).accentColor
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Expanded(
+                    child: Text(
+                      products[index]['title'],
+                      style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold, fontFamily: 'Oswald'),
+                    ),
                   ),
-                )
-              ],
+                  SizedBox(width: 8.0,),
+                  Container(
+                    child: Text('\$${products[index]['price'].toString()}', style: TextStyle(color: Colors.white),),
+                    padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(4.0)),
+                      color: Theme.of(context).accentColor
+                    ),
+                  )
+                ],
+              ),
             ) 
           ),
           ButtonBar(
