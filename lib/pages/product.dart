@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
+import '../widgets/ui_widgets/title_default.dart';
+
 class ProductPage extends StatelessWidget {
   final Map<String,dynamic> product;
 
@@ -42,7 +44,7 @@ class ProductPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Image.asset(product['imageUrl']),
-                Container(padding: EdgeInsets.all(8.0), child: Text(product['title'])),
+                Container(padding: EdgeInsets.all(8.0), child: TitleDefault(title: product['title'],)),
                 Container(
                   padding: EdgeInsets.all(8.0),
                   child: IconButton(

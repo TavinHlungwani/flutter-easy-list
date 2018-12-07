@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './price_tag.dart';
+import '../ui_widgets/title_default.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({
@@ -26,10 +27,7 @@ class ProductCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Expanded(
-                    child: Text(
-                      product['title'],
-                      style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold, fontFamily: 'Oswald'),
-                    ),
+                    child: new TitleDefault(title: product['title']),
                   ),
                   SizedBox(width: 8.0,),
                   PriceTag(product['price'].toString())
